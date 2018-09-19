@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<!-- favicon --> 
+	<link rel="icon" href="imagens/foto3.png">
 	<title>Home - html5 css3</title>
 	<!-- SEO Importante -->
 	<meta name = description content = "Aprenda html5 e css3 de forma simples e prática">
@@ -9,9 +11,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<h1>Aprenda HTML5 e CSS3 de forma simples e prática, desenvolvendo um site responsivo do "zero"</h1>
+	<!-- estrutura principal -->
+	<div id = "main">
+		<!--cabeçalho -->
+		<header>
+			<img src = "imagens/foto2.png" alt="Fotinho show de bola">
+		</header>
+        <!-- menu -->
+        <nav>
+        	<ul>
+        		<li><a href="#">Home</a></li>
+        		<li><a href="#">Sobre</a></li>
+        		<li><a href="#">Conteúdo</a>
+        			<ul>
+                  <li><a href="#">HTML</a></li>
+        		  <li><a href="#">CSS</a></li>
+        		  <li><a href="#">JavaScript</a>
 
-	<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta facilis nesciunt incidunt dolorem! Ullam hic harum molestias voluptatum, molestiae placeat ut quos numquam. Porro eligendi, id sunt molestias placeat nobis.</span><span>Eaque repudiandae assumenda, alias harum in nobis quibusdam nemo numquam non minima facilis ex cumque quo ab voluptatum tempore nam, dicta cum consequuntur explicabo iure iste, eius accusantium facere. Nisi!</span></p>
+
+                   </ul>
+        		</li>
+        		<li><a href="#">Contato</a></li>
+        	</ul>
+
+        </nav>
+        <!-- conteúdo-->
+        <section id = "banner">
+        	<img src="imagens/foto7.png" alt="Curso HTML5 CSS3">
+        </section>
+
+         <section id = "heading">
+          	<h1>Aprenda HTML5 e CSS3 de forma simples e prática, desenvolvendo um site responsivo do "zero"</h1>
+         </section>
+
+         <section id = "destaque">
+         	<!-- bloco 1 -->
+         	<img src="imagens/foto4.png" alt="mobile">
+         	<h2>Destaque 1</h2>
+         	<p>lorem ipsum lorem ipsum</p>
+         	<a href="#">botão 1</a>
+
+         	<!-- bloco 2 -->
+         	<img src="imagens/foto5.png" alt="responsivo">
+         	<h2>Destaque 2</h2>
+         	<p>lorem ipsum lorem ipsum</p>
+         	<a href="#">botão 2</a>
+
+         	<!-- bloco 3 -->
+         	<img src="imagens/foto1.png" alt="frontend">
+         	<h2>Destaque 3</h2>
+         	<p>lorem ipsum lorem ipsum</p>
+         	<a href="#">botão 3</a>
+         </section>
+
+         <!-- rodapé -->
+         <footer>
+         	<p>©2018 - Professor Gabriel David O Brabo.</p>
+         </footer>
+    </div>
+
+	
 	
 </body>
 </html>
