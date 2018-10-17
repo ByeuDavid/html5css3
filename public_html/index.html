@@ -9,16 +9,23 @@
 	<meta name = description content = "Aprenda html5 e css3 de forma simples e prática">
 	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- uso da jquery via CDN do google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<!-- estrutura principal -->
 	<div id = "main">
 		<!--cabeçalho -->
 		<header>
-			<img src = "imagens/foto2.png" alt="Fotinho show de bola">
+			<img src = "imagens/nota1.jpg" alt="Fotinho show de bola">
 		</header>
         <!-- menu -->
-        <nav>
+        <nav class="Menu"> <!-- Classe usada para fixar menu JS -->
+            <!--(&#9776 desenho de 3 linhas horizontais)-->
+            <a href="#" class="Mobile">&#9776 Menu </a>
         	<ul>
         		<li><a href="#">Home</a></li>
         		<li><a href="#">Sobre</a></li>
@@ -37,7 +44,8 @@
         </nav>
         <!-- conteúdo-->
         <section id = "banner">
-        	<img src="imagens/foto7.png" alt="Curso HTML5 CSS3">
+        	<img src="imagens/piano3.jpg" alt="Curso HTML5 CSS3">
+            <h1>Primeiros passos com HTML + CSS3</h1>
         </section>
 
          <section id = "heading">
@@ -70,6 +78,9 @@
          </footer>
     </div>
 
+            <script src="js/menuresponsivo.js"></script>   
+            <script src="js/fixamenu.js"></script> 
+            <script src="js/removeclick.js"></script>
 	
 	
 </body>
