@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<!-- favicon -->
 	<link rel="icon" href="imagens/icone.png"> 
-	<title>Home - html5 css3</title>
+	<title>Contato - html5 css3</title>
 	<!-- SEO Importante -->
-	<meta name = "description" content = "Aprenda html5 e css3 de forma simples e prática">
+	<meta name = "description" content = "Página de contato">
 	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
 		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
 	<!-- Link com a folha de estilo -->
@@ -43,37 +43,20 @@
 			</ul>
 		</nav>
 
-		<!-- conteúdo -->
-		<section id="banner">
-			<img src="imagens/piano3.jpg" alt="Curso básico de html5 e css3">
-			<h1>Primeiros passos com HTML5 + CSS3</h1>
-		</section>
+		<!-- Formulário de contato -->
+		<div id="contato">
+			<h1>Contato</h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome"
+				placeholder="nome">
+				<input type="text" name="email"
+				placeholder="email">
+				<textarea name="mensagem" placeholder="mensagem"></textarea>
+				<input type="submit" name="Enviar">
+		</div>
 
-		<section id="heading">
-			<h2>Aprenda HTML5 e CSS3 de forma simples e prática desenvolvendo um site responsivo do "zero"</h2>
-		</section>
 
-		<section id="destaque">
-			<!-- bloco 1 -->
-			<img src="imagens/smartphone.png" alt="">
-			<h2>Destaque 1</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 1</a>
-			
-			<!-- bloco 2 -->
-			<img src="imagens/tablet.png" alt="">
-			<h2>Destaque 2</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 2</a>
-
-			<!-- bloco 3 -->
-			<img src="imagens/desktop.png" alt="">
-			<h2>Destaque 3</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 3</a>
-			
-		</section>
-
+		
 		<!-- rodapé -->
 		<footer>
 			<p>©2018 - Gabriel David</p>			
