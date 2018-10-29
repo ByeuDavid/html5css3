@@ -1,0 +1,640 @@
+/**
+ Folha de estilo principal do html5 + css3
+ @author Gabriel David 
+
+ */
+
+/****************  IMPORTANDO FONT ****************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+/**************** Principal ****************/
+body {
+	font-family: 'Open Sans', sans-serif;
+	/*background-color: #ffffff;*/
+	background-image: url("../imagens/textura.jpg");
+	background-attachment: fixed; /* fixa o background */
+	background-size: cover; /* manter o tamanho de forma responsiva */
+	font-size: 1em; /* 1em = 16 px */
+}
+
+#main{
+	max-width: 1024px;
+	background-color: #FFFFFF;
+	margin: 0 auto; /* centralizar a div*/
+	margin-top: 50px; /* box model */
+
+}
+ /*********** Cabeçalho *************/
+ header{
+ 	width: 100%;
+ 	height: 200px;
+ 	/*background-color: #FFE4E1; /* dica para ajustar elementos */
+ 	margin-bottom: 20px;
+
+ }
+ header img {
+ 	width: 128px;
+ 	height: 128px;
+ 	margin-top: 10px;
+ 	margin-left: 40px;
+ }
+ section img{
+ 	margin-top: 5%;
+ }
+
+/*********** MENU **********/
+
+
+/***************** Tratamento responsivo *****************/
+
+img{
+	max-width: 100%; /*todas as imagens do site ficam responsivas */
+}
+
+.git img{
+	width: 64px;
+	height: 64px;
+	text-align: center;
+}
+
+
+
+/*********** MENU RESPONSIVO ***********/
+nav{
+	width: 100%;
+	max-width: 1024px;
+	position: absolute;
+	z-index: 3;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+nav > ul > li{
+	float: left;
+	/*width com esse valor devido a borda */
+	width: 25%; /* 4 elementos do menu primário */
+
+}
+
+nav > ul > li > a{
+	font-size: 1.125em;
+}
+
+nav ul li a{
+	background-color:  #2FBAA7;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+
+nav ul li a:hover{
+	background-color: #78F9D5;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+}
+
+/* Desenhando um triângulo no css */
+
+.Detalhes:after{ /* Atributo after (após o conteudo)*/
+	content: ''; /* Content: insere um conteudo no css */
+	color: #FFFFFF;
+	border: 5px solid transparent;
+
+	border-top-color: #000000; 
+	/* Alinhamento */
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.Mobile{
+	display: none;
+}
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+}
+
+/******* Conteúdo em Destaque - home ******/
+
+/*** banner ***/
+#banner{
+	margin-top: 0px;
+	max-width: 1024px;
+	height: 350px;
+	/*** usado para flexibilizar o layout ***/
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+#banner img{
+	filter: brightness(60%);
+}
+
+#banner h1{
+	position: absolute;
+	color: #ffffff;
+	margin: 0;
+	font-family: monotype corsiva;
+	font-size: 2.4em;
+	text-transform: uppercase; /*maiúsculo*/
+}
+
+/*** Banner Erudita ***/
+#erudita{
+	width: 100%;
+}
+
+#erudita img{
+	margin: 0%;
+	filter: brightness(90%);
+}
+
+#erudita h1{
+	color: #000000;
+	margin-top:9%;
+	font-family: monotype corsiva;
+	font-size: 2.4em;
+	text-transform: uppercase; /*maiúsculo*/
+}
+
+#erudita h2{
+	margin: 3%;
+	color: #000000;
+	font-family: monotype corsiva;
+	font-size: 2.4em;
+	text-align: center;
+}
+
+
+#erudita p{
+	text-align: center;
+	font-family: monotype corsiva;
+	font-size: 1.3em;
+
+}
+
+/** erudita2**/
+#erudita2 img{
+	
+	width: 90px;
+	height:90px;
+
+}
+
+#erudita2 h3{
+		margin: 3%;
+	color: #000000;
+	font-family: monotype corsiva;
+	font-size: 2.2em;
+	text-align: center;
+
+}
+
+/** Banner Popular **/
+#popular{
+	width: 100%;
+}
+
+#popular img{
+	margin: 0%;
+	filter: brightness(90%);
+}
+
+#popular h1{
+	color: #000000;
+	margin-top:9%;
+	font-family: monotype corsiva;
+	font-size: 2.4em;
+	text-transform: uppercase; /*maiúsculo*/
+}
+
+#popular h2{
+	margin: 3%;
+	color: #000000;
+	font-family: monotype corsiva;
+	font-size: 2.4em;
+	text-align: center;
+}
+
+#popular p{
+	text-align: center;
+	font-family: monotype corsiva;
+	font-size: 1.3em;
+}
+
+
+
+#destaque p{
+	text-align: center;
+	font-size: 1.3em;
+	font-family: monotype corsiva;
+}
+
+
+
+
+
+/*** heading ***/
+#heading{
+	width: 80%;
+	margin: 0 auto;
+	padding: 35px;
+}
+
+#heading h2{
+	text-align: center;
+	font-weight: 400;
+	font-size: 50px;
+	font-family: monotype corsiva;
+}
+
+/***** blocos ****/
+#destaque{
+	max-width: 1024px;
+	height: 360px;
+}
+
+.blocos{
+	width: 30.76%; /* (315/1024)*100 */
+	height: 360px;
+	background-color: #FFFFFF;
+	float: left;
+	margin-left: 0.97%; /* (20px/1024px)*100 */
+	border: 1px solid  #dedede;
+	text-align: center;
+	position: relative; /*posicionamento do botão*/ 
+}
+
+.blocos p{
+	/**padding: 0px 10px 0px 10px;
+	text-align: center;
+	top: 20px;**/
+}
+.blocos a{
+	width: 50px;
+	padding: 5px 35px 5px 35px;
+	display: block;
+	background-color: #2FBAA7;
+	color:#FFFFFF;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 100px;
+	bottom: 0px;
+	border:0px;
+	border-radius: 10px;
+
+}
+
+/************ Formulário de contato **********/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #78F9D5;
+	margin-bottom: 20px;	
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #78F9D5;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #000000;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	padding: 10px 25px 10px 25px;
+	color: #ffffff;
+}
+
+
+	/***** RODAPÉ *****/
+	footer{
+		width: 100%;
+		background-color: #2FBAA7;
+		margin-top: 50px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+		color: #ffffff;
+		font-size: 0.75em;
+
+	}
+/***** 1° ponto de quebra ******/
+
+@media screen and (max-width: 1058px){
+	/****** principal ******/
+		body{
+		margin: 0px;
+	}
+		#main{ 
+		margin-top: 0px;
+	}
+	#banner{
+		margin-top: 10px;
+	}
+}
+
+/***** 2° ponto de quebra ******/
+@media screen and (max-width: 837px){
+	#banner{
+		margin-top: -50px;
+		
+	}
+
+}
+
+
+/***** 2° ponto de quebra ******/
+@media screen and (max-width: 792px){
+	#banner{
+		margin-top: -20px;
+		
+	}
+
+}
+
+/***** 3° ponto de quebra ******/
+@media screen and (max-width: 704px){
+	#banner{
+		margin-top: -35px;
+		
+	}
+
+}
+
+/***** 4° ponto de quebra ******/
+@media screen and (max-width: 697px){
+	#banner{
+		margin-top: -25px;
+		
+	}
+
+}
+
+/***** 5° ponto de quebra ******/
+@media screen and (max-width: 682px){
+	#banner{
+		margin-top: -40px;
+		
+	}
+
+}
+
+/***** 6° ponto de quebra ******/
+@media screen and (max-width: 622px){
+	#banner{
+		margin-top: -20px;
+		
+	}
+
+}
+
+/***** 7° ponto de quebra ******/
+@media screen and (max-width: 621px){
+	#banner{
+		margin-top: -45px;
+		
+	}
+
+}
+
+/***** 8° ponto de quebra ******/
+@media screen and (max-width: 620px){
+	#banner{
+		margin-top: -45px;
+		font-size: 0.550em;
+	}
+}
+
+/***** 9° ponto de quebra ******/
+@media screen and (max-width: 532px){
+	#banner{
+		margin-top: -50px;
+		font-size: 0.550em;
+	}
+}
+
+
+/***** 10° ponto de quebra ******/
+@media screen and (max-width: 521px){
+	#banner{
+		margin-top: -50px;
+		
+	}
+
+}
+
+/***** 11° ponto de quebra ******/
+@media screen and (max-width: 498px){
+	#banner{
+		margin-top: -60px;
+		font-size: 0.550em;
+	}
+}
+
+
+/***** 12° ponto de quebra ******/
+@media screen and (max-width: 492px){
+	#banner{
+		margin-top: -60px;
+		font-size: 0.550em;
+	}
+}
+
+
+
+
+
+/***** Tratamento responsivo ********/
+
+@media screen and (max-width: 480px){
+	body{	
+		margin: 0;
+	}
+	#main{
+		margin: 0;
+	}
+
+	/*** cabeçalho ***/
+
+	header{
+ 	text-align: center;
+ 	margin-bottom: 0px;
+
+ }
+ header img {
+ 	margin-top: 0px;
+ 	margin-left: 0px;
+ }
+
+	/* menu hamburguer */
+	.Mobile{
+		display: block;
+		background-color: #2FBAA7;
+		color: #FFFFFF;
+		text-decoration: none;
+		padding: 15px;
+}
+nav > ul > li{
+	float: none;
+	width: 100%;
+	}
+
+nav ul{
+	width: 100%;
+	display: none;
+	}
+	
+	/* ajuste */
+
+	nav ul li a{
+		/*font-size: 0.938em;
+		padding: 12px;*/
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* remover efeito de trans~ição */
+
+	}
+	nav li ul li{
+		background-color: #78F9D5;
+	}
+
+	nav li  ul li a{
+		background-color:#78F9D5;
+		padding-left: 40px;
+	}
+
+	/*** IMPORTANTE para UX no dispositivo mobile, não exibir o 2º nivel do menu enquanto o conteudo
+	não for clicado **/
+	nav li:hover ul{
+		display: none;
+	}
+
+
+
+
+	/***** banner ******/
+
+#destaque{
+	max-width: 315px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.blocos{
+	width: 100%;
+	height: 360px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+iframe{
+	width: 300px;
+	height: 200px;
+}
+
+.blocos a{
+	left: 195px;
+}
+
+
+	#banner{
+		margin-top: 105px;
+		height: 0;			
+	}
+
+	#banner h1{		
+		font-size: 1.5em;	
+		text-align: center;	
+		font-family: monotype corsiva;
+	}
+
+	/*** heading ***/
+	#heading{
+		width: 90%;
+		padding: 20px;
+		margin-top: 60px;
+	}
+
+	#heading h2{
+		font-size: 2.0em;
+		font-family: monotype corsiva;
+	}
+
+	#erudita{
+		margin-top: 60px;
+
+
+	}
+
+	#erudita h1{
+		font-size: 2.0em;
+		font-family: monotype corsiva;
+	}
+
+	#erudita h2{
+		font-size: 2.0em;
+		font-family: monotype corsiva;
+	}
+
+	#popular{
+		margin-top: 60px;
+
+
+	}
+
+	#popular h1{
+		font-size: 2.0em;
+		font-family: monotype corsiva;
+	}
+
+	#popular h2{
+		font-size: 2.0em;
+		font-family: monotype corsiva;
+	}
+
+
+	#destaque p{
+		font-family: monotype corsiva;
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+
+
+	
+}
+

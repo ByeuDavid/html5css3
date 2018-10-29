@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<!-- favicon -->
-	<link rel="icon" href="imagens/icone.png"> 
-	<title>Sobre - html5 css3</title>
+	<link rel="icon" href="imagens/icone.png">
+	<title>Sobre - HTML5 CSS3</title>
 	<!-- SEO Importante -->
-	<meta name = "description" content = "Professor José de Assis">
-	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
-		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
-	<!-- Link com a folha de estilo -->
+	<meta name= description content="Gabriel David">
+	<!-- A linha abaixo garante o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- CDN Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<!-- estrutura principal -->
 	<div id="main">
+	<!-- cabeçalho -->
+	<header>
+		<a href="https://www.google.com.br/"><img src="imagens/logo.png" title = "Nota Musical" alt="Logotipo do Site"></a>
 
-		<!-- cabeçalho -->
-		<header>
-			<a href="index.html"><img src="imagens/logo.png" title="Nota Musical" alt="Logotipo do site"></a>
-		</header>
 
-		<!-- menu -->
-		<nav class="Menu">
-			<!-- Classe usada para fixar menu no JS -->
-		<!-- &#9776 (desenho 3 linhas horizontais-->
+	</header>
+
+	<!-- menu -->
+	<nav class="Menu">
 		<a href="#" class="Mobile">&#9776; Menu</a>
-			<!-- ul>li*4>a -->
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="#" class="Detalhes">Conteúdo </a>
-					<ul>
-						<li><a href="conteudo/html5.html">HTML5</a></li>
-						<li><a href="conteudo/css3.html">CSS3</a></li>
-						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">JavaScript</a></li>
-					</ul>
-				</li>
-				<li><a href="contato.html">Contato</a></li>
-			</ul>
-		</nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="#" class="Detalhes">Conteúdo</a>
+				<ul>
+				<li><a href="conteudo/erudita.html">Erudita</a></li>
+				<li><a href="conteudo/popular.html">Popular</a></li>
+				<li><a href="https://www.youtube.com/watch?v=-oT2SfILGCY&list=PLPXmN3KeXMo6PSh5-XBjw5NUKpycSic3d" target="_blank">Aulas de Violão</a></li>
+				</ul>
+			</li>
 
-		<section class="git" style="text-align: center">
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
 
-			<img src="imagens/piano1.jpg" alt="Piano Ilustrativo" >
-			<h1 style="text-align: center; margin:15%;">Veja mais sobre a projeção e o desenvolvimento desse site</h1>
-			<p style="text-align: center;">Esse site foi projetado e desenvolvido pelo Professor José de Assis, no ano de 2018, com o objetivo de ensinar HTML5 e CSS3.</p>
-			<hr>
-			<a href="https://github.com/professorjosedeassis" target="_blank">
-			<img src="imagens/github.png" alt="Acesso ao GitHub" title="GitHub"></a>
 
-		</section>
 
-		<section>
-			<h2>Material para Estudo</h2>
-			<a href="apostila.pdf" Download></a>
-		</section>
+	<section style="text-align: center;margin:50px;">
+    <h1 style="font-size: 30px; padding: 3%; font-family: monotype corsiva">Veja abaixo algumas informações sobre o desenvolvimento do site:</h1>
 
-	<!-- rodapé -->
-		<footer>
-			<p>©2018 - Gabriel David</p>			
-		</footer>
+		<img src="imagens/pianogif.gif", title="Gif Piano" style="margin-bottom: 40px;">
+	</section>
+
+	<p style="text-align: center; font-family: monotype corsiva; font-size: 22px; padding: 2%"><b>Este site foi projetado e desenvolvido em 2018 por um aluno da turma de TI do Senac, Gabriel David, com o objetivo de mostrar um pouco sobre o mundo musical, mostrando história e instrumentos.	</b></p>
+	<div style="text-align: center;">
+		<hr>
+		<iframe src="//www.slideshare.net/slideshow/embed_code/key/GiI2nh7MDMWtN" width="500" height="415" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/aluciaba/orquestra-sinfnica-44173652" title="Orquestra Sinfónica" target="_blank">Orquestra Sinfónica</a> </strong> de <strong><a href="https://www.slideshare.net/aluciaba" target="_blank">Ana Lúcia Francisco</a></strong> </div>
 	</div>
-<script src="js/menuresponsivo.js"></script>
-<script src="js/fixamenu.js"></script>
-<script src="js/removeclick.js"></script>	
+
+	<section class="git" style="text-align: center;">
+		<hr>
+		<a href="https://github.com/byeudavid/html5css3" target="_blank"><img src="imagens/github.png" title="GitHub" alt="GitHub"></a>
+
+	</section>
+<!-- rodapé -->
+	<footer>
+		<p>©2018 - Gabriel David</p>
+	</footer>
+
+	
+	</div>
+
+<script src="js/menuresponsivo.js "></script>	
+<script src="js/fixamenu.js "></script>
+<script src="js/removeclick.js "></script>
 </body>
 </html>

@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<!-- favicon -->
-	<link rel="icon" href="imagens/icone.png"> 
-	<title>Contato - html5 css3</title>
+	<link rel="icon" href="imagens/icone.png">
+	<title>Contato - Gabribellax</title>
 	<!-- SEO Importante -->
-	<meta name = "description" content = "Página de contato">
-	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
-		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
-	<!-- Link com a folha de estilo -->
+	<meta name= description content="Gabriel David">
+	<!-- A linha abaixo garante o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- CDN Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<!-- estrutura principal -->
+	<!-- Estrutura Principal -->
 	<div id="main">
+	<!-- Cabeçalho -->
+	<header>
+		<a href="https://www.google.com.br/"><img src="imagens/logo.png" title = "Nota Musical" alt="Logotipo do Site"></a>
 
-		<!-- cabeçalho -->
-		<header>
-			<a href="index.html"><img src="imagens/logo.png" title="Nota Musical" alt="Logotipo do site"></a>
-		</header>
 
-		<!-- menu -->
-		<nav class="Menu">
-			<!-- Classe usada para fixar menu no JS -->
-		<!-- &#9776 (desenho 3 linhas horizontais-->
+	</header>
+
+	<!-- Menu -->
+	<nav class="Menu">
 		<a href="#" class="Mobile">&#9776; Menu</a>
-			<!-- ul>li*4>a -->
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="#" class="Detalhes">Conteúdo </a>
-					<ul>
-						<li><a href="conteudo/html5.html">HTML5</a></li>
-						<li><a href="conteudo/css3.html">CSS3</a></li>
-						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">JavaScript</a></li>
-					</ul>
-				</li>
-				<li><a href="contato.html">Contato</a></li>
-			</ul>
-		</nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="#" class="Detalhes">Conteúdo</a>
+				<ul>
+				<li><a href="conteudo/erudita.html">Erudita</a></li>
+				<li><a href="conteudo/popular.html">Popular</a></li>
+				<li><a href="https://www.youtube.com/watch?v=-oT2SfILGCY&list=PLPXmN3KeXMo6PSh5-XBjw5NUKpycSic3d" target="_blank">Aulas de Violão</a></li>
+				</ul>
+			</li>
 
-		<!-- Formulário de contato -->
-		<div id="contato">
-			<h1>Contato</h1>
-			<form action="formulario.php" method="POST">
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
+
+	<!-- Formulário de Contato -->
+	<div id="contato">
+		<h1>Contato</h1>
+		<form action="formulario.php" method="POST">
 				<input type="text" name="nome"
 				placeholder="nome">
 				<input type="text" name="email"
 				placeholder="email">
 				<textarea name="mensagem" placeholder="mensagem"></textarea>
-				<input type="submit" name="Enviar">
-		</div>
-
-
-		
-		<!-- rodapé -->
-		<footer>
-			<p>©2018 - Gabriel David</p>			
-		</footer>
+				<input type="submit" name="Enviar"></form>
 	</div>
-<script src="js/menuresponsivo.js"></script>
-<script src="js/fixamenu.js"></script>
-<script src="js/removeclick.js"></script>	
+
+<!-- Rodapé -->
+	<footer>
+		<p>©2018 - Gabriel David</p>
+	</footer>
+
+	
+	</div>
+
+<script src="js/menuresponsivo.js "></script>	
+<script src="js/fixamenu.js "></script>
+<script src="js/removeclick.js "></script>
 </body>
 </html>

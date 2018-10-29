@@ -1,9 +1,9 @@
 <?php
 /**
-* Hello world php
-* @author Gabriel David
+Hello world php
+@author Sabrina da Silva
 */
 
-    echo "Hello World";
-    phpinfo();
+	echo "Hello World";
+	phpinfo();
 ?>

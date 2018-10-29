@@ -11,8 +11,8 @@
 	 
 	//Configurações do email, ajustar conforme necessidade
 	
-	$email_destinatario = "gabrielmiranda22@hotmail.com"; // qualquer email pode receber os dados
-	$email_assunto = "Contato do site gabribella";
+	$email_destinatario = "sabrinadasilvav@gmail.com"; // qualquer email pode receber os dados
+	$email_assunto = "Contato do site html5 css3";
 	
 	 
 	//Monta o Corpo da Mensagem
@@ -21,7 +21,7 @@
 	$email_conteudo .= "Email: $email \n"; 
 	$email_conteudo .=  "Mensagem: $mensagem \n";
  	 
-	//Seta os Headers (parametros de configurações do envio de email)
+	//Seta os Headers (parâmetros de configuração do envio de email)
 	
 	$email_headers = implode ( "\n",array ( "De: $email_remetente", "Destinarario: $email_destinatario", "Assunto: $email_assunto","Return-Path:  $email_remetente","MIME-Version: 1.0","X-Priority: //3","Content-Type: text/html; charset=UTF-8" ) );
 	 
@@ -33,11 +33,11 @@
 	}else{
 		echo "Falha no envio do formulário";
 		
-		/* para estilizar o retorno usar o ?> codigo html <?php  para "sair momentaneamente" do php */
+		/* para estilizar o retorno usar o ?> código html <?php  para "sair momentaneamente" do php */
 		/* exemplo
 		
 		?>
-			<div class="falha">Falha no envio do formulario</div>
+			<div class="falha">Falha no envio do formulário</div>
 		<?php
 		
 		*/

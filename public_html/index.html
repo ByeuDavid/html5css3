@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<!-- favicon -->
-	<link rel="icon" href="imagens/icone.png"> 
-	<title>Home - html5 css3</title>
+	<link rel="icon" href="imagens/icone.png">
+	<title>Home - Arte Musical</title>
 	<!-- SEO Importante -->
-	<meta name = "description" content = "Aprenda html5 e css3 de forma simples e prática">
-	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
-		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
-	<!-- Link com a folha de estilo -->
+	<meta name= description content="Aprenda mais sobre a música e toda sua arte">
+	<!-- A linha abaixo garante o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<!-- CDN Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<!-- estrutura principal -->
 	<div id="main">
+	<!-- cabeçalho -->
+	<header>
+		<a href="https://www.google.com.br/"><img src="imagens/logo.png" title = "Nota Musical" alt="Logotipo do Site"></a>
 
-		<!-- cabeçalho -->
-		<header>
-			<a href="index.html"><img src="imagens/logo.png" title="Nota Musical" alt="Logotipo do site"></a>
-		</header>
 
-		<!-- menu -->
-		<nav class="Menu">
-			<!-- Classe usada para fixar menu no JS -->
-		<!-- &#9776 (desenho 3 linhas horizontais-->
+	</header>
+
+	<!-- menu -->
+	<nav class="Menu">
 		<a href="#" class="Mobile">&#9776; Menu</a>
-			<!-- ul>li*4>a -->
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="#" class="Detalhes">Conteúdo </a>
-					<ul>
-						<li><a href="conteudo/html5.html">HTML5</a></li>
-						<li><a href="conteudo/css3.html">CSS3</a></li>
-						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">JavaScript</a></li>
-					</ul>
-				</li>
-				<li><a href="contato.html">Contato</a></li>
-			</ul>
-		</nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="#" class="Detalhes">Conteúdo</a>
+				<ul>
+				<li><a href="conteudo/erudita.html">Erudita</a></li>
+				<li><a href="conteudo/popular.html">Popular</a></li>
+				<li><a href="https://www.youtube.com/watch?v=-oT2SfILGCY&list=PLPXmN3KeXMo6PSh5-XBjw5NUKpycSic3d" target="_blank">Aulas de Violão</a></li>
+				</ul>
+			</li>
 
-		<!-- conteúdo -->
-		<section id="banner">
-			<img src="imagens/piano3.jpg" alt="Curso básico de html5 e css3">
-			<h1>Primeiros passos com HTML5 + CSS3</h1>
-		</section>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
 
-		<section id="heading">
-			<h2>Aprenda HTML5 e CSS3 de forma simples e prática desenvolvendo um site responsivo do "zero"</h2>
-		</section>
+	<!-- conteúdo -->
+	<section id="banner">
+		<img src="imagens/piano3.jpg" alt="Banner Piano" title="Banner Piano">
+		<h1 style="text-align: center">Contemple as belezas da música</h1>
+	</section>
 
-		<section id="destaque">
-			<!-- bloco 1 -->
-			<img src="imagens/smartphone.png" alt="">
-			<h2>Destaque 1</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 1</a>
-			
-			<!-- bloco 2 -->
-			<img src="imagens/tablet.png" alt="">
-			<h2>Destaque 2</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 2</a>
+	<section id="heading" style="text-align: center">
+		<h2>Alguns instrumentos músicais bem conhecidos.</h2>
+	</section>
 
-			<!-- bloco 3 -->
-			<img src="imagens/desktop.png" alt="">
-			<h2>Destaque 3</h2>
-			<p>lorem ipsum lorem ipsum</p>
-			<a href="#">botão 3</a>
-			
-		</section>
+	<section id="destaque" style="text-align: center">
+		<!-- Bloco 1 -->
+		<div class="blocos">
+		<img src="imagens/pianoilustrativo.png" alt="Piano" title="Piano">
+		<h2>Piano</h2>
+		<!--<p> Piano é um instrumento musical de cordas percussivas, segundo o sistema de classificação de Hornbostel-Sachs. O som é produzido por peças feitas em madeira e cobertas por um material (geralmente feltro) macio e designados martelos, e sendo ativados através de um teclado, tocam nas cordas esticadas e presas numa estrutura rígida de madeira ou metal. As cordas vibram e produzem o som. </p>-->
+		<a href="conteudo/erudita.html">Erudito</a>
+		</div>
 
-		<!-- rodapé -->
-		<footer>
-			<p>©2018 - Gabriel David</p>			
-		</footer>
+		<!-- Bloco 2 -->
+<div class="blocos">
+		<img src="imagens/violao.png" alt="Violão" title="Violão">
+		<h2>Violão</h2>
+		<!--<p> O violão pode tercordas de nylon ou aço, concebida inicialmente para a interpretação de peças de música erudita. O corpo é oco e chato, em forma de oito e feito de várias madeiras diferentes. O braço possui trastes que a tornam um instrumento temperado. As versões mais comuns possuem seis cordas de nylon, mas há violões com outras configurações, como o violão de sete cordas e o violão baixo, com 4 cordas, afinadas uma oitava abaixo das 4 cordas mais graves do violão/viola.</p>-->
+		<a href="conteudo/popular.html">Popular</a>
+		</div>
+
+
+		<!-- Bloco 3 -->
+<div class="blocos">
+	
+		<img src="imagens/harp.png" alt="Harpa" title="Harpa">
+		<h2>Harpa</h2>
+		<!--<p> A harpa, juntamente com a flauta, é um dos instrumentos mais antigos. Teria se originado dos arcos de caça que faziam barulho ao roçarem na corda. Ela é sempre triangular, lembrando um arco de caça. A harpa é constituída pela caixa de ressonância, coluna, pescoço(s), cordas e por vezes, pedais ou levers (chaves/alavancas de semitom).</p>-->
+		<a href="https://www.youtube.com/watch?v=-oT2SfILGCY&list=PLPXmN3KeXMo6PSh5-XBjw5NUKpycSic3d" target="_blank">Vídeo</a>
+		</div>
+
+
+		
+	</section>
+
+
+	<!-- rodapé -->
+	<footer>
+		<p>©2018 - Gabriel David</p>
+	</footer>
+
+	
 	</div>
-<script src="js/menuresponsivo.js"></script>
-<script src="js/fixamenu.js"></script>
-<script src="js/removeclick.js"></script>	
+
+<script src="js/menuresponsivo.js "></script>	
+<script src="js/fixamenu.js "></script>
+<script src="js/removeclick.js "></script>
+<script src="js/tela.js"></script>
 </body>
 </html>
